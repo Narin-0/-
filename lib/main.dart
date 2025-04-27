@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
-import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart'; // Обязательно добавь эту зависимость
-
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +26,7 @@ class MyApp extends StatelessWidget {
                         height: 293,
                         child: FlutterMap(
                           options: MapOptions(
-                            initialCenter: LatLng(59.939095, 30.315868), // Санкт-Петербург
+                            initialCenter: LatLng(42.8746, 74.6126)/*Показывает всегда бишкек */,
                             initialZoom: 10.0,
                             minZoom: 2,
                             maxZoom: 18,
@@ -45,59 +41,29 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                   ],
-                ),
-                const SizedBox(height: 10,)
-                const InputChip(label: label)
-
+                ), // Блок Карты
+                const SizedBox(height: 10,),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Container(
+                    height: 50,
+                    width: MediaQuery.of(context).size.width * 0.8, // 50% от ширины экрана,
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Поиск компании', // Подсказка внутри поля
+                        prefixIcon: Icon(Icons.search), // <-- Иконка лупы слева
+                        border: OutlineInputBorder( // Чтобы было красиво с рамкой и скруглением
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                      ),
+                    ),
+                  ),
+                )  // Блок поиска
               ],
             ),
           ),
         ),
       ),
-    );
-  }
-}
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 100;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter--;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
