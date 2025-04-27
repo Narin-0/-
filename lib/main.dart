@@ -62,11 +62,111 @@ class MyApp extends StatelessWidget {
                 const SizedBox(height: 10,),
                 Expanded(
                   child: ListView(
-                    children: const [
-                      ListTile(title: Text("Компания 1"),),
-                      ListTile(title: Text("Компания 2")),
-                      ListTile(title: Text("Компания 3")),
-                      ListTile(title: Text("Компания 4")),
+                    children: [
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'кто прочитает тот гей',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text("Компания 2 (Бишкек)"),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.add_location_alt),
+                          tooltip: 'Зафиксировать геолокацию здесь',
+                          onPressed: () {  },
+                        ),
+                      ),
                     ],
                   ),
                 ),
