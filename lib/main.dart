@@ -58,7 +58,18 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                   ),
-                )  // Блок поиска
+                ), // Блок поиска
+                const SizedBox(height: 10,),
+                Expanded(
+                  child: ListView(
+                    children: const [
+                      ListTile(title: Text("Компания 1"),),
+                      ListTile(title: Text("Компания 2")),
+                      ListTile(title: Text("Компания 3")),
+                      ListTile(title: Text("Компания 4")),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
