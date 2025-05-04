@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'company_map_page.dart';
 import '../main.dart';
+import 'package:narin_0/models/supply_node.dart';
+
 
 class RoleSelectionPage extends StatelessWidget {
   const RoleSelectionPage({super.key});

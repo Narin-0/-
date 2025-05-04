@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
-import '../models/supply_node.dart';
+import 'package:narin_0/models/supply_node.dart';
+
+
 
 class AddSupplyNodePage extends StatefulWidget {
   final List<SupplyNode> existingNodes;

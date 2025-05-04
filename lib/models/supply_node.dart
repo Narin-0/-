@@ -16,4 +16,17 @@ class SupplyNode {
     required this.certifications,
     required this.nextSteps,
   });
+
+  // Если нужно, можно добавить метод toJson
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'lat': location.latitude,
+      'lng': location.longitude,
+      'type': type,
+      'isEthical': isEthical,
+      'certifications': certifications,
+      'nextSteps': nextSteps,
+    };
+  }
 }
